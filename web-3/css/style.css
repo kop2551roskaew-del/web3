@@ -1,0 +1,71 @@
+@charset "utf-8";
+/* CSS Document */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+/* จัดการส่วน Header */
+.header-section {
+    width: 100%;
+    background-color: #f4f4f4;
+}
+
+.header-img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* จัด Layout กึ่งกลางหน้า */
+.main-container {
+    display: flex; /* ใช้ Flexbox เพื่อจัดคอลัมน์ */
+    max-width: 1200px;
+    margin: 20px auto;
+    gap: 20px;
+}
+
+/* 2. จัดการ Sidebar (ซ้าย) */
+.sidebar {
+    flex: 1; /* กำหนดขนาดความกว้างฝั่งซ้าย */
+    background-color: #eee;
+    padding: 15px;
+}
+
+.sidebar-img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+/* ส่วนเนื้อหา (ขวา) */
+.content {
+    flex: 3; /* ให้เนื้อหากว้างกว่า Sidebar */
+    padding: 15px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
+
+/* 3. จัดการ Footer */
+.footer-section {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.sidebar ul {
+    list-style-type: none; /* คำสั่งหลักที่ใช้เอาจุดออก */
+    padding: 0;            /* แถม: ช่วยขยับข้อความให้ชิดซ้ายสุด (ปกติ ul จะมี padding-left) */
+    margin: 0;
+}
+
+.sidebar ul li {
+    padding: 8px 0;        /* เพิ่มช่องว่างระหว่างบรรทัดให้ดูสวยงาม */
+    border-bottom: 1px solid #ddd; /* แถม: ขีดเส้นใต้เมนูให้ดูเป็นระเบียบ */
+}
+
